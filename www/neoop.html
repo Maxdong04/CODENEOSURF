@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>NEOSURF</title>
+    <link rel="stylesheet" href="layout/layout.css">
+</head>
+<body>
+    <div class="app3">
+        <div class="top_set">
+            <b></b>
+            <i></i>
+        </div>
+        <div class="setting">
+            <a href="">Mes codes</a>
+            <a href="">Commandes en attente</a>
+            <a href="">Paramètre</a>
+            <a href="">Déconnexion</a>
+        </div>
+        <div class="sep"></div>
+        <div class="content">
+            <b class="create">Choisissez votre option d'opération</b>
+            <div class="box" id="neoop" style=" background: url(src/cart.png) no-repeat 30px #b4b4b4 ; background-size: 40px;">ACHETEZ UN <br> CODE NEOSURF </div>
+            <div class="box" id="visop" style=" background: url(src/code.png) no-repeat 30px #b4b4b4 ; background-size: 40px;">LISTE DE <br> MES CODES </div>
+            <div class="go">
+                <a class="prev">CONTINUER</a>
+            </div>
+        </div>
+    </div>
+    <script src="jquery.js"></script>
+    <script>
+        $(function(){
+            var appHtml = $(document).height();
+            $('.app').css('height',appHtml+'px');
+            
+            $('#app2').click(function(){
+                 $('.app').fadeOut(200);
+            });
+            $('#app').click(function(){
+                 $('.app').fadeIn(200);
+            });
+            $('.top_set i').click(function(){
+                 $('.setting').slideToggle(200);
+            });
+            $('.content .box').click(function(){
+                $('.content .box').css('border','solid 2px #e6e6e6').css('color','white');
+                $(this).css('border','solid 2px #d9ff40').css('color','#d9ff40');
+                 var getIdhis = $(this).attr('id');
+                 $('.go').html('<a class="continue" href="'+getIdhis+'.html">CONTINUER</a>');
+            });
+            
+            
+        });
+    </script>
+</body>
+</html>

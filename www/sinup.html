@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>NEOSURF</title>
+    <link rel="stylesheet" href="layout/layout.css">
+</head>
+<body>
+    <div class="app2">
+        <div class="view_log">
+            <div class="inp">
+                <b class="create">Création de compte</b>
+                <form action="create/create_account.php" method="post">
+					<input type="text" class="loga" name="nom" class="nom" placeholder="Nom" value="">
+					<input type="text" class="loga" name="prenom" class="prenom" placeholder="Prénom" value="">
+					<input type="text" class="pay" name="pays" class="" placeholder="Pays" value="">
+					<input type="text" class="tel" name="tele" class="" placeholder="Téléphone" value="">
+					<input type="text" class="ema" name="emails" class="" placeholder="Email" value="">
+					<input type="text" class="pwd" name="pwd" class="" placeholder="Mot de passe" value="">
+					<input type="text" class="cnf" name="c_pwd" class="" placeholder="Confirmation mot de passe" value="">
+				</form>
+            </div>
+            <div class="subox">
+                <input type="submit" value="S'INSCRIRE">
+                <a href="index.html" id="appx">Vous avez un compte, connectez-vous</a>
+            </div>
+        </div>
+    </div>
+    <script src="jquery.js"></script>
+    <script>
+        $(function(){
+            var appHtml = $(document).height();
+            $('.app').css('height',appHtml+'px');
+            
+            $('#app2').click(function(){
+                 $('.app').fadeOut(200);
+            });
+            $('#app').click(function(){
+                 $('.app').fadeIn(200);
+            });
+            $('.top_set i').click(function(){
+                 $('.setting').slideToggle(200);
+            });
+            $('.content .box').click(function(){
+                $('.content .box').css('border','solid 2px #e6e6e6').css('color','white');
+                $(this).css('border','solid 2px #d9ff40').css('color','#d9ff40');
+                 var getIdhis = $(this).attr('id');
+                 $('.go').html('<a class="continue" href="'+getIdhis+'.html">CONTINUER</a>');
+            });
+            
+            
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+body{margin:0px; background: #005182; font-family: arial; background: url(../src/light2.png) no-repeat center bottom fixed #005182 ; background-size: 125% auto;}
+
+.app{ position: absolute; height: 100%; width: 100%; z-index: 80; }
+.app2{ position: absolute; height: 100%; width: 100%; z-index: 70; }
+.app3{ position: absolute; height: 100%; width: 100%;  z-index: 60; }
+
+.top_set{position: fixed; width: 100%; background: #266a94;}
+.setting{position: fixed; width: 100%; background: #071b2e; top: 60px; display: none;}
+.setting a{display: block; padding: 20px; color: white; font-weight: bold; text-decoration: none; border-bottom: solid 1px #02090f;}
+.top_set b{display: block; float: left; height: 60px; width: 60px;background: url(../src/logo_set.png) no-repeat center ; background-size:60%;}
+.top_set i{display: block; float: right; height: 60px; width: 60px;background: url(../src/set.png) no-repeat center ; background-size:35%; border-left:solid 1px #005182;}
+
+.sep{height: 60px;}
+.content{padding: 25px;}
+.content .box{padding: 25px; text-align: center; font-weight: bold; margin-bottom: 25px; font-size: 15px; border-radius: 5px; border: solid 2px #e6e6e6; color: white;}
+
+.view_log{ }
+.view_log .logo{ width:250px; padding-top:60px; }
+.view_log .inp{padding-top: 20px; }
+.view_log .inp input{ font-size: 18px; display: block; margin: auto; padding: 15px; padding-left: 70px; width: 230px; border: 0px; color: #00649f;}
+.view_log .inp input:focus{ /* background: #ffff80; */ }
+.view_log .inp .loga{ background: url(../src/user.png) no-repeat 10px 0px white ; background-size:auto 100%; border-bottom: dotted 2px #f0f0f0;}
+.view_log .inp .pwd{ background: url(../src/user2.png) no-repeat 10px 0px white ; background-size:auto 100%;}
+
+
+.view_log{ }
+.view_log .logo{ width:250px; padding-top:60px; }
+.view_log .inp{padding-top: 20px; }
+.view_log .inp input{ font-size: 18px; display: block; margin: auto; padding: 15px; padding-left: 70px; width: 230px; border: 0px; color: #00649f;}
+.view_log .inp input:focus{ /* background: #ffff80; */ }
+.view_log .inp .loga{ background: url(../src/user.png) no-repeat 10px 0px white ; background-size:auto 100%; border-bottom: dotted 2px #f0f0f0;}
+.view_log .inp .pwd{ background: url(../src/user2.png) no-repeat 10px 0px white ; background-size:auto 100%; bottom: dotted 2px #f0f0f0;}
+.view_log .inp .ema{ background: url(../src/ema.png) no-repeat 10px 0px white ; background-size:auto 100%; border-bottom: dotted 2px #f0f0f0;}
+.view_log .inp .tel{ background: url(../src/tel.png) no-repeat 10px 0px white ; background-size:auto 100%; border-bottom: dotted 2px #f0f0f0;}
+.view_log .inp .cnf{ background: url(../src/cnf.png) no-repeat 10px 0px white ; background-size:auto 100%; border-top: dotted 2px #f0f0f0; }
+.view_log .inp .pay{ background: url(../src/pay.png) no-repeat 10px 0px white ; background-size:auto 100%; border-bottom: dotted 2px #f0f0f0; }
+
+.create{color: white; display: block; text-align: center; padding-bottom: 14px; font-size: 18px;}
+.prev{font-size: 14px; font-weight: bold; display: block; margin: auto; font-family: arial; padding: 14px; border: 0px; border-radius: 2px; letter-spacing: 1px; background: #6192b1; color: #abc5d6; margin-bottom: 18px; text-decoration: none; text-align: center; width: 60%;}
+.continue{font-size: 14px; font-weight: bold; display: block; margin: auto; font-family: arial; padding: 14px; border: 0px; border-radius: 2px; letter-spacing: 1px; background: #acd700; color: white; margin-bottom: 18px; text-decoration: none; text-align: center; width: 60%;}
+
+.subox{padding-top: 20px; text-align: center;}
+.subox input{font-size: 14px; font-weight: bold; display: block; margin: auto; font-family: arial; padding: 14px; width: 315px; border: 0px; border-radius: 2px; letter-spacing: 1px; background: #acd700; background-size:100% 50%; color: white; margin-bottom: 18px;}
+.subox a{color: #c4f400; font-size: 14px;}
+
+@media (max-width:350px) {
+    .view_log .inp input{ font-size: 14px; display: block; margin: auto; padding: 15px; padding-left: 70px; width: 180px; border: 0px; color: #00649f;}
+    
+    .subox input{font-size: 14px; font-weight: bold; display: block; margin: auto; font-family: arial; padding: 14px; width: 265px; border: 0px; border-radius: 2px; letter-spacing: 1px; background: #acd700; background-size:100% 50%; color: white; margin-bottom: 18px;}
+    
+    .view_log .logo{ width:200px; padding-top:40px; }
+}
+
+@media (max-height:506px ) {
+    .view_log .logo{ width:160px; padding-top:40px; }
+    
+    .view_log .inp input{ font-size: 14px; display: block; margin: auto; padding: 10px; padding-left: 70px; width: 180px; border: 0px; color: #00649f;}
+    
+    .subox input{font-size: 13px; font-weight: bold; display: block; margin: auto; font-family: arial; padding: 10px; width: 265px; border: 0px; border-radius: 2px; letter-spacing: 1px; background: #acd700; background-size:100% 50%; color: white; margin-bottom: 18px;}
+}
+
+
